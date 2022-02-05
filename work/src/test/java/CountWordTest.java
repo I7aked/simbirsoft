@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class CountWordsTest extends TestCase {
+public class CountWordTest extends TestCase {
 
     Set<String> testSet = new HashSet<>();
     Map<String, Integer> expectedMap = new HashMap<>();
