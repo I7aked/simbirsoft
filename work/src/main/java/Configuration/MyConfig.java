@@ -14,7 +14,6 @@ import java.beans.PropertyVetoException;
 import java.util.Properties;
 
 @Configuration
-@ComponentScan(basePackages = "Configuration")
 @EnableWebMvc
 @EnableTransactionManagement
 public class MyConfig
@@ -26,7 +25,7 @@ public class MyConfig
         try {
             dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");
             dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/my_db?useUnicode=true&serverTimezone=UTC");
-            dataSource.setUser("bestuser");
+            dataSource.setUser("root");
             dataSource.setPassword("bestuser");
         } catch (PropertyVetoException e) {
             e.printStackTrace();
